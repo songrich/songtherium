@@ -1,2 +1,7 @@
-const lion={이름:'심바',나이:3,주인공:'참',대사:function () {console.log('하쿠나마타타')}}
-lion.대사()
+function checkAge(age) {
+    if (age >= 19) { console.log('안녕하세요') }
+    else { console.log('나가세요') }
+}
+
+// 함수 실행
+checkAge(40)

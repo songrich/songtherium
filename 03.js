@@ -1,3 +1,7 @@
-const sentence="Learning JavaScript is fun!"
-const newSentence=sentence.replace("JavaScript","Coding")
-console.log(newSentence)
+function repeatWord(str, n) {
+  for (let i = 0; i < n; i++) { console.log(str) }
+}
+repeatWord("hello", 5)
+
+// 함수 실행
+

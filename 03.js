@@ -1,7 +1,27 @@
-function repeatWord(str, n) {
-  for (let i = 0; i < n; i++) { console.log(str) }
-}
-repeatWord("hello", 5)
-
-// 함수 실행
-
+let tutors = [
+    {
+      name: '최원장',
+      time: '9to6',
+    },
+    {
+      name: '윤창식',
+      time: '9to6',
+    },
+    {
+      name: '박가현',
+      time: '9to6',
+    },
+    {
+      name: '김병연',
+      time: '9to6',
+    },
+  ];
+  
+  // 여기에 코드를 작성하세요.
+  // 멘토링 상태를 확인할 수 있는 불리언 타입의 isMentoring 속성을 추가합니다.
+  const newTutors =tutors.map(tutor => {
+    const check={name:tutor.name,time:tutor.time,isMentoring:true}
+    return check
+  });
+  
+  console.log(newTutors);

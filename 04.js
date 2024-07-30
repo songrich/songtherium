@@ -1,36 +1,26 @@
-const members = [
-  {
-    name: "최원장",
-    role: "tutor",
-  },
-  {
-    name: "윤창식",
-    role: "tutor",
-  },
-  {
-    name: "김병연",
-    role: "tutor",
-  },
-  {
-    name: "박가현",
-    role: "tutor",
-  },
-  {
-    name: "김멍멍",
-    role: "student",
-  },
-  {
-    name: "이야옹",
-    role: "student",
-  },
-];
-
-function getStudents() {
-  // hint: 배열 안의 모든 객체를 한 번 반복한다.  (반복문)
-  // hint: 반복문 안에서 role이 tutor인 객체의 name을 콘솔에 출력한다 (조건문)
-  for (let i = 0; i < members.length; i++) {
-    if (members[i].role === "tutor") { console.log(members[i].name) }
-  }
-}
-// 함수 실행
-getStudents()
+let starbucks = [
+    {
+      name: '카페 라떼',
+      icedOnly: false,
+    },
+    {
+      name: '콜드 브루',
+      icedOnly: true,
+    },
+    {
+      name: '돌체 라떼',
+      icedOnly: false,
+    },
+    {
+      name: '돌체 콜드 브루',
+      icedOnly: true,
+    },
+  ];
+  
+  // 여기에 코드를 작성하세요.
+  // 아이스 전용 커피 배열을 만듭니다.
+  const icedOnly = starbucks.filter(coffee => {
+    return coffee.icedOnly===true
+  });
+  
+  console.log(icedOnly);
